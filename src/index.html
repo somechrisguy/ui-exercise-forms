@@ -6,8 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/app.pcss" />
     <script async src="./scripts/app.ts"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <div>Replace me with the exercise design</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-12 mt-5 mb-3 mx-auto">
+          <h3 class="font-weight-bold text-center">Forgot Your Password?</h3>
+          <p class="text-center">Please enter your email address below to recieve a password reset link.</p>
+        </div>
+        <div class="container">
+          <div class="row bg-gray">
+            <div class="col-lg-6 col-md-8 col-12 py-4 mx-auto">
+
+              <form id="password-reset" class="needs-validation" novalidate>
+
+                <h5 id="form-error-feedback" class="font-weight-bold text-danger text-center py-4"></h5>
+
+                <div class="form-group px-5">
+                  <label for="email">Email Address</label>
+                  <input class="form-control form-control-lg" id="email" type="email" placeholder="Your email address" name="email" required>
+                  <div class="invalid-feedback">
+                    <span>Please enter valid email address</span>
+                  </div>
+                </div>
+                <div class="d-sm-flex justify-content-between align-items-center px-5">
+                  <button type="submit" class="btn btn-lg btn-primary px-5 py-3 font-weight-bold rounded-0 border-0">Reset Password</button>
+                  <a class="d-block mt-2 mt-sm-0" href="/">Go Back</a>
+                </div>                
+              </form>
+              <div class="mt-4 px-5">
+                <a href="#"></a>
+                <p>
+                  <a style="text-decoration:none; position:relative;" data-toggle="collapse" href="#help-content" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Are you having trouble resetting your password? <span class="d-none d-md-block down-arrowhead">⌄</span>
+                  </a>
+                </p>
+                <div class="collapse" id="help-content">
+                  <div class="card card-body">
+                    <p>We have had some customers who mistakenly believe they have a store account when in fact they are only signed up to recieve our VIP Club newsletter.</p>
+                    <p>If you wish to recieve our newsletter but have never made a purchase online this might apply to you, the best way to check this is to do the following:</p>
+                    <ol class="pl-3 mt-3">
+                      <li>Go back to the <a href="/register">register page</a></li>
+                      <li class="mt-2">Register with your email address<br>
+                        <small class="font-italic">If you do already have an account the form will tell you</small>
+                      </li>
+                    </ol>
+                    <p class="mt-2">If the form tells you you already have an account and the password reset doesnt work, please contact the Customer Service Team on 033 900 0094.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
